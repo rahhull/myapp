@@ -1,0 +1,60 @@
+/* FAQComponent.css */
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border: none;
+}
+
+.faq-item {
+  width: 80%; /* Set a width to limit the FAQ items */
+  cursor: pointer;
+  text-align: center; 
+  background-color: rgb(42, 41, 41) ;
+  /* Align the text to the left */
+}
+
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  font-size: 20px;
+  padding: 10px;
+  color: hwb(0 100% 0%);
+  background-color: rgb(42, 41, 41) ;
+  justify-content: space-between;  
+}
+
+.faq-question:hover {
+  background-color: #9a9595;
+  transition: 0.5s;
+}
+
+.toggle-button {
+  background-color: rgb(42, 41, 41);
+  color: white;
+  font-size: 35px;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.faq-answer {
+  padding: 10px;
+  display: block;
+  overflow: hidden;
+  max-height:0;
+  font-size: 25px;
+  background-color: rgb(42, 41, 41) ;
+  color: white;
+  transition: max-height 0.3s ease;
+  border-top: 2px solid black;
+}
+
+.faq-item.expanded .faq-answer {
+  max-height: 1000px; /* Adjust this value to control the expand height */
+}
+

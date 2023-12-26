@@ -1,0 +1,76 @@
+/* SignupPage.css */
+
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Replace the last value (0.5) with the desired transparency (0 to 1) */
+
+}
+
+.signup-form {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9); /* Black transparent background */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form h2 {
+  text-align: left;
+  color: #ccc;
+  margin-bottom: 40px;
+
+}
+
+.signup-form input {
+  display: block;
+  width: 90%;
+  padding: 15px;
+  font-size: 15px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remember-me {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center;
+  color: gray;
+  margin-bottom: 10px;
+  
+}
+
+.remember-me label {
+  margin-left: 5px;
+}
+
+.signup-form button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.signup-form p {
+  text-align: center;
+}
+
+.signup-form a {
+  color: gray; /* Red link color */
+  text-decoration: none;
+}
+
+.signup-form a:hover {
+  text-decoration: underline;
+}
